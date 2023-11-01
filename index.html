@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <title>D20 Check</title>
+</head>
+<body>
+
+    <h1>D20 Checker</h1>
+    <h5>Check to see how fair your D20 is</h5>
+
+    <h4>What to do</h4>
+    <ul>
+        <li>Grab your D20</li>
+        <li>Roll your D20</li>
+        <li>Record the result with the buttons below</li>
+        <li>The more you roll, the more you'll know if you die is biased.</li>
+    </ul>
+
+    <h3>Number of times you've rolled: <span id="numberOfRolls">0</span></h3>
+
+<div class="sideBySide">
+    <div id="dice-roll-inputs"></div>
+    <table>
+        <tr>
+        
+          <td><button onclick="recordRoll(1)">1</button></td>
+          <td><button onclick="recordRoll(2)">2</button></td>
+          <td><button onclick="recordRoll(3)">3</button></td>
+          <td><button onclick="recordRoll(4)">4</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="recordRoll(5)">5</button></td>
+          <td><button onclick="recordRoll(6)">6</button></td>
+          <td><button onclick="recordRoll(7)">7</button></td>
+          <td><button onclick="recordRoll(8)">8</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="recordRoll(9)">9</button></td>
+          <td><button onclick="recordRoll(10)">10</button></td>
+          <td><button onclick="recordRoll(11)">11</button></td>
+          <td><button onclick="recordRoll(12)">12</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="recordRoll(13)">13</button></td>
+          <td><button onclick="recordRoll(14)">14</button></td>
+          <td><button onclick="recordRoll(15)">15</button></td>
+          <td><button onclick="recordRoll(16)">16</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="recordRoll(17)">17</button></td>
+          <td><button onclick="recordRoll(18)">18</button></td>
+          <td><button onclick="recordRoll(19)">19</button></td>
+          <td><button onclick="recordRoll(20)">20</button></td>
+        </tr>
+    </table>
+
+
+
+    <canvas id="myChart"></canvas>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+    
+</body>
+</html>

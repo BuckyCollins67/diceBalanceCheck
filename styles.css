@@ -1,0 +1,125 @@
+/* styles.css */
+
+body {
+    display: flex;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    font-family: Arial, sans-serif;
+  }
+  
+  h2, h3, h4, h5 {
+    color: #bb86fc; /* Light purple for headings */
+  }
+  
+  table {
+    height: 45vh;
+    width: 45%;
+    margin: 0 10px 0 10px;
+    border-collapse: collapse;
+    
+  }
+  
+  td, th {
+    border: 1px solid #bb86fc; /* Light purple borders */
+    text-align: center;
+    padding: 10px;
+    color: #e0e0e0; /* Light text */
+  }
+  
+  button {
+    background-color: #1f1b24; /* Darker element backgrounds */
+    color: #e0e0e0; /* Light text */
+    border: 1px solid #bb86fc; /* Light purple borders */
+    padding: 10px 20px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #bb86fc; /* Light purple on hover */
+    color: #121212;
+  }
+  
+  canvas {
+    width: 45%;
+    background-color: #1f1b24; /* Darker background for canvas */
+    border: 1px solid #bb86fc; /* Light purple border */
+  }
+
+  .sideBySide{
+    display: flex;
+    flex-direction: row;
+
+    width: 90%;
+
+  }
+
+  #myChart{
+    width: 45%;
+    height: 45vh;
+  }
+  
+  /* If you want to add more custom styling for your inputs section */
+  #dice-roll-inputs {
+    text-align: center; /* Centering the buttons */
+  }
+  
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    body {
+      width: 95%;
+      margin: 0 2.5%;
+    }
+  
+    .sideBySide {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    canvas,
+    #myChart,
+    table {
+      width: 100%;
+      height: auto; /* Adjust height for better fit on smaller screens */
+    }
+  
+    #dice-roll-inputs button {
+      padding: 5px 10px; /* Smaller padding on mobile */
+    }
+  }
+  
+  /* Media query for mobile phones */
+  @media (max-width: 480px) {
+    body {
+      width: 100%;
+      margin: 0;
+    }
+  
+    h2, h3, h4, h5 {
+      font-size: 4vw; /* Smaller font size on mobile */
+    }
+
+    .sideBySide {
+        width: auto;
+    }
+  
+    table {
+      width: 100%; /* Hide table on very small screens, or adjust as needed */
+    }
+  
+    #dice-roll-inputs button {
+      width: 20%; /* Give buttons a fixed width */
+      font-size: 3vw; /* Smaller font size on mobile */
+    }
+  
+    #dice-roll-inputs {
+      flex-wrap: wrap; /* Wrap buttons if they don't fit in a single row */
+    }
+  }
