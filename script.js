@@ -35,13 +35,13 @@ let rollCounts = new Array(20).fill(0);
 // Function to record a roll and update the chart
 function recordRoll(roll) {
     rollCounts[roll - 1]++; // Increment the count for the rolled number
-    updateRollCount();
-    updateChart(); // You will define this function to update the chart
+    updateRollCount();  
+    updateChart(); 
 }
 
 // Function to update the chart
 function updateChart() {
-    // Assuming you've already created a chart instance named 'myChart'
+    
     myChart.data.datasets[0].data = rollCounts;
     myChart.update();
 }
@@ -53,4 +53,3 @@ function updateRollCount() {
     rollCountElement.textContent = totalRolls; // Update the display
 }
 
-// Call this function whenever you update the chart or record a roll
